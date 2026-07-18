@@ -1,0 +1,54 @@
+.navbar-nav {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    font-size: 20px;
+}
+
+.top-img {
+    height: 680px;
+    width: 1500px;
+}
+
+.top-text {
+    margin-left: 150px;
+    position: relative;
+    margin-top: -500px;
+    font-size: 100px;
+}
+
+.setumei {
+    margin-top: 400px;
+    margin-left: 150px;
+}
+
+.setumei-text {
+    margin-left: 150px;
+}
+
+.container {
+    border: 3px solid #000000;
+    /* 緑色の枠線 */
+    border-radius: 10px;
+    /* 角を丸くする */
+    padding: 20px;
+    width: 1200px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    /* 影を付ける */
+    background-color: #f9fff9;
+    /* 背景色 */
+    margin: 0 auto;
+}
+
+.container-p {
+    margin-right: 200px;
+}
+
+/* ここから下は、作成中ページのCSS */
+
+.top-text-sakusei {
+    margin-left: 550px;
+    position: relative;
+    margin-top: -500px;
+    font-size: 100px;
+}
