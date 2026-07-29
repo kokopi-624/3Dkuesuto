@@ -38,6 +38,8 @@
     background-color: #f9fff9;
     /* 背景色 */
     margin: 0 auto;
+
+    margin-bottom: 30px; 
 }
 
 .container-p {

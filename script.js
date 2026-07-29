@@ -1,16 +1,19 @@
 const baseHtml = document.querySelector('.spreadsheets--item.js-base');
 const spreadsheets = document.querySelector('spreadsheets');
-const apiURL = 'https://script.google.com/macros/s/AKfycbyRFK_B-BIgYv9KVYxMkM2lGuadqHP8QwLirzVmQLMl/dev'
+const apiURL = 'https://script.google.com/macros/s/AKfycbxTRcbPwHLuXdLKehyrBEbp0fYmsUr0mIrdzuwT698ugQsMV41OtPJhMwa_Sr7Kx5DU4Q/exec'
 
 async function loadData() {
     const response = await fetch(apiURL);
     const data = await response.json();
-    data.forEach(entry =>{
-        const copy = baseHtml.cloneNode(true);
+    data.forEach(entry,index =>{
+        const data = baseHtml.cloneNode(true);
         copy.classList.remove('js-base');
-        document.getElementById('.spreadsheets--irai').textContent = data.irai;
-        document.getElementById('.spreadsheets--gaiyou').textContent = data.gaiyou;
-        document.getElementById('.spreadsheets--name').textContent = data.name;
+
+        copy.id = `spreadsheet-item-${index}`;
+
+        copy.querySelector('#spreadsheets--irai').textContent = entry.irai;
+        copy.querySelector('#spreadsheets--gaiyou').textContent = entry.gaiyou;
+        copy.querySelector('#spreadsheets--name').textContent = entry.name;
         spreadsheets.appendChild(copy);
     })
     
