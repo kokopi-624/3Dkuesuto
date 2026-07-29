@@ -33,8 +33,7 @@
     /* 角を丸くする */
     padding: 20px;
     width: 1200px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-    /* 影を付ける */
+    
     background-color: #f9fff9;
     /* 背景色 */
     margin: 0 auto;
