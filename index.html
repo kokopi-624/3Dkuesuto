@@ -53,12 +53,12 @@
 
    
             <ul class="spreadsheets">
-    <!-- 💡 これが1件分の塊（1個）です。containerクラスは外しておきます -->
-                <li class="spreadsheets--item js-base">
-                    <p id="spreadsheets--irai"></p>
+                <div class="spreadsheets--item js-base ">
+                    <h2 id="spreadsheets--irai"></h2>
                     <p id="spreadsheets--gaiyou"></p>
-                    <p id="spreadsheets--name"></p>
-                </li>
+                    <h3 id="spreadsheets--name"></h3>
+                    <button type="button" onclick="if(confirm('本当にこの操作を実行しますか？')){ alert('実行する'); } else { alert('キャンセル'); }" class="saksuei">作成</button>
+                </div>
             </ul>
 
 

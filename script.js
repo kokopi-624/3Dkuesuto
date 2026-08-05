@@ -24,6 +24,7 @@ async function loadData() {
         const copy = baseHtml.cloneNode(true);
         copy.classList.remove('js-base');
         copy.id = `spreadsheet-item-${index}`;
+        copy.classList.add('spase');
 
         // 2. コピーした1件分の塊の中にある p タグにデータを設定
         copy.querySelector('#spreadsheets--irai').textContent = entry.irai;
