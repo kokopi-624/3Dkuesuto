@@ -53,3 +53,33 @@
     margin-top: -500px;
     font-size: 100px;
 }
+
+ボタンデザイン
+
+.btn1,
+button.btn1 {
+  color: #000000;
+  background-color: #fffb00;
+  border-radius: 10px;
+  width: 80px;
+  height: 70px;
+  font-size: 20px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN';
+}
+
+.btn2,
+button.btn2 {
+  color: #000000;
+  background-color: #00c81b;
+  border-radius: 10px;
+  width: 80px;
+  height: 70px;
+  font-size: 20px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN';
+}
+
+/* 複製元（ひな形）を非表示にする */
+/* 複製元（ひな形）を非表示にする */
+.js-base {
+    display: none;
+}

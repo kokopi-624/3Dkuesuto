@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="ja">
 <head>
     <meta charset="utf-8">
     <title>3Dモデリングクエスト！！</title>
@@ -11,27 +11,25 @@
     <script src="script.js" defer></script>
 </head>
 
-<header>
-    <div class="collapse navbar-collapse sticky-top">
-        <ul class="navbar-nav">
-            <div class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-            </div>
-
-            <div class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sakusei.html">作成中</a>
-            </div>
-
-            <div class="nav-item">
-                <a class="nav-link active" aria-current="page" href="kannryou.html">完了！</a>
-            </div>
-        </ul>
-    </div>
-</header>
-
 <body>
+    <header>
+        <div class="collapse navbar-collapse sticky-top">
+            <ul class="navbar-nav">
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sakusei.html">作成中</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kannryou.html">完了！</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
     <div class="top-item">
-        <img class="top-img" src="img/top-img.png">
+        <img class="top-img" src="img/top-img.png" alt="TOP画像">
 
         <p class="top-text">
             3Dモデリングクエスト！！
@@ -39,48 +37,35 @@
 
         <h2 class="setumei">
             このサイトの使い方・注意事項
-            <h4 class="setumei-text">
+            <p class="setumei-text">
                 このサイトは、3Dモデリングを依頼したり、それを受けて3Dモデリングを作ってもらったりするサイトです！
                 <br>「3Dモデリングができないけど、こういうものを作ってほしい！」など、「3Dモデリングしたいけど、作りたいものがない！」と思っている方におすすめです！
-                <br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                <br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                <br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                <br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-            </h4>
+            </p>
         </h2>
     </div>
 
-
+    <!-- 動的要素が追加される親コンテナ -->
     <ul class="spreadsheets">
-        <div class="spreadsheets--item js-base ">
-            <h2 id="spreadsheets--irai"></h2>
-            <p id="spreadsheets--gaiyou"></p>
-            <h3 id="spreadsheets--name"></h3>
+        <!-- 複製元（ひな形） -->
+        <li class="spreadsheets--item js-base">
+            <h2 class="spreadsheets--irai"></h2>
+            <p class="spreadsheets--gaiyou"></p>
+            <h3 class="spreadsheets--name"></h3>
             <div class="button-group">
-                <button class="button1">作成</button>
-                <button class="button2" disabled>完了</button>
+                <button class="btn1">作成</button>
+                <button class="btn2" disabled>完了</button>
             </div>
-
-            <script>
-
-                const buttonGroups = document.querySelectorAll('.button-group')
-                buttonGroups.forEach(group => {
-                    const btn1 = group.querySelector('.button1');
-                    const btn2 = group.querySelector('.button2');
-
-                    btn1.addEventListener('click', () => {
-                        btn2.disabled = false;
-                    });
-                });
-
-            </script>
-
-        </div>
-
+        </li>
     </ul>
 
-
-
-
+   <script class="button-js">
+    const spreadsheets = document.querySelector('.spreadsheets');
+    spreadsheets.addEventListener('click', (event) => {
+        if (event.target.classList.contains('btn1')) {
+            const group = event.target.closest('.button-group');
+            }
+        }
+    );
+</script>
 </body>
+</html>
