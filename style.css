@@ -20,10 +20,11 @@
 .setumei {
     margin-top: 400px;
     margin-left: 150px;
+    font-size: 30px;
 }
 
 .setumei-text {
-    margin-left: 150px;
+    font-size: 25px;
 }
 
 .spase {
@@ -53,6 +54,24 @@
     margin-top: -500px;
     font-size: 100px;
 }
+
+
+/* 1. 通常時のカード（最初） */
+.spreadsheets--item {
+    background-color: #ffffff; /* 白 */
+    transition: background-color 0.3s ease;
+}
+
+/* 2. 「作成」を押したとき（作成中） */
+.spreadsheets--item.is-creating {
+    background-color: #fffb00; /* 薄いオレンジ */
+}
+
+/* 3. 「完了」を押したとき */
+.spreadsheets--item.is-completed {
+    background-color: #00c81b; /* 薄い緑 */
+}
+
 
 ボタンデザイン
 
