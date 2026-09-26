@@ -1,3 +1,10 @@
+.body{
+    background-color: rgb(219, 255, 255);
+}
+
+
+
+
 .navbar-nav {
     justify-content: center;
     gap: 40px;
@@ -6,25 +13,28 @@
 }
 
 .top-img {
-    height: 680px;
-    width: 1500px;
+    height: 750px;
+    width: 1480px;
+    animation: fadeIn 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+ 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.top-text {
-    margin-left: 150px;
-    position: relative;
-    margin-top: -500px;
-    font-size: 100px;
-}
 
 .setumei {
-    margin-top: 400px;
     margin-left: 150px;
     font-size: 30px;
 }
 
 .setumei-text {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .spase {
