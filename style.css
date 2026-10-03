@@ -12,7 +12,11 @@
     font-size: 20px;
 }
 
-
+.top-img {
+    height: 750px;
+    width: 1480px;
+    animation: fadeIn 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
  
 @keyframes fadeIn {
   0% {
