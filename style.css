@@ -49,6 +49,11 @@
 
 /* ここから下は、作成中ページのCSS */
 
+.irai-text{
+    font-size: 50px;
+}
+
+
 .top-text-sakusei {
     margin-left: 550px;
     position: relative;
