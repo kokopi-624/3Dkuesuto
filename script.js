@@ -2,7 +2,7 @@
 const baseHtml = document.querySelector('.spreadsheets--item.js-base');
 const spreadsheets = document.querySelector('.spreadsheets');
 
-const apiURL = 'https://script.google.com/macros/s/AKfycbzKBgDcvOyTVfPgpvkbyWwge4Psd8eBpqyPVy6uEIOl-x0-Dls9_O-he9hdl50RMjxI1g/exec';
+const apiURL = 'https://script.google.com/macros/s/AKfycbz6DDIyA6KxdJvHueZKqXxRpUJh4576-PkPr_DKuD-IVAj_fIcU92gzGRaBZ7L6jLL2/exec';
 
 // ひな形を保存して、画面上では非表示にする
 const baseTemplate = baseHtml ? baseHtml.cloneNode(true) : null;
