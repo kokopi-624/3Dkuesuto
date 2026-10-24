@@ -70,6 +70,10 @@
 .spreadsheets--item {
     background-color: #ffffff; /* 白 */
     transition: background-color 0.3s ease;
+    border: 2px solid #333333; /* 太さ（2px）、線の種類（実線）、色（黒） */
+  padding: 16px;            /* ボックスの内側の余白 */
+  margin: 16px 0;           /* ボックスの外側の余白 */
+  border-radius: 20px; 
 }
 
 /* 2. 「作成」を押したとき（作成中） */
